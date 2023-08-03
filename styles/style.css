@@ -17,8 +17,7 @@ body {
     height: 412px;
     overflow: hidden;
     border: 2px solid #ffffff;
-    box-shadow: 0px 0px 20px 14px rgba(0, 0, 0, 0.384);
-    ;
+    box-shadow: 0px 0px 25px 15px rgba(0, 0, 0, 0.226);
 }
 
 .slides {
