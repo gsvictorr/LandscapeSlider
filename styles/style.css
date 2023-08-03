@@ -1,5 +1,4 @@
-
-body{
+body {
     margin: 0;
     padding: 0;
     width: 100%;
@@ -7,19 +6,22 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #8dd0fd;
+    background: linear-gradient(360deg, rgba(255,255,255,1) 27%, rgba(0,206,255,1) 61%, rgba(0,159,255,1) 100%);
 }
 
 
 
-.slider{
+.slider {
     margin: 0 auto;
     width: 900px;
     height: 412px;
     overflow: hidden;
+    border: 2px solid #ffffff;
+    box-shadow: 0px 0px 20px 14px rgba(0, 0, 0, 0.384);
+    ;
 }
 
-.slides{
+.slides {
     width: 400%;
     height: 412px;
     display: flex;
@@ -28,24 +30,24 @@ body{
 }
 
 
-.slides input{
+.slides input {
     display: none;
 }
 
 
-.slide{
+.slide {
     width: 25%;
     position: relative;
     transition: 2s;
 
 }
 
-.slide img{
+.slide img {
     width: 900px;
     height: 412px;
 }
 
-.manual-navigation{
+.manual-navigation {
     position: absolute;
     width: 900px;
     margin-top: -30px;
@@ -54,7 +56,7 @@ body{
 }
 
 
-.manual-btn{
+.manual-btn {
     border: 2px solid #fff;
     padding: 5px;
     border-radius: 10px;
@@ -63,40 +65,43 @@ body{
 }
 
 
-.manual-btn:not(:last-child){
+.manual-btn:not(:last-child) {
     margin-right: 15px;
 }
 
-.manual-btn:hover{
+.manual-btn:hover {
     background-color: #fff;
 }
 
 
-#radio1:checked ~ .first{
+#radio1:checked~.first {
     margin-left: 0;
 }
-#radio2:checked ~ .first{
+
+#radio2:checked~.first {
     margin-left: -25%;
 }
-#radio3:checked ~ .first{
+
+#radio3:checked~.first {
     margin-left: -50%;
 }
-#radio4:checked ~ .first{
+
+#radio4:checked~.first {
     margin-left: -75%;
 }
 
 
 
-.navigation-auto div{
- border: 2px solid #20a6ff;
- padding: 5px;
- border-radius: 10px;
- cursor: pointer;
- transition: 1s;
+.navigation-auto div {
+    border: 2px solid #20a6ff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
 
 }
 
-.navigation-auto{
+.navigation-auto {
     position: absolute;
     width: 900px;
     margin-top: 382px;
@@ -105,27 +110,28 @@ body{
 
 
 }
-.navigation-auto div:not(:last-child){
+
+.navigation-auto div:not(:last-child) {
     margin-right: 15px;
 }
 
 
-#radio1:checked ~ .navigation-auto .auto-btn1{
+#radio1:checked~.navigation-auto .auto-btn1 {
     background-color: #fff;
 
 }
 
-#radio2:checked ~ .navigation-auto .auto-btn2{
+#radio2:checked~.navigation-auto .auto-btn2 {
     background-color: #fff;
-    
+
 }
 
-#radio3:checked ~ .navigation-auto .auto-btn3{
+#radio3:checked~.navigation-auto .auto-btn3 {
     background-color: #fff;
-    
+
 }
 
-#radio4:checked ~ .navigation-auto .auto-btn4{
+#radio4:checked~.navigation-auto .auto-btn4 {
     background-color: #fff;
-    
+
 }
